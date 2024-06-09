@@ -1,0 +1,101 @@
+body {
+  /* Задаем шрифт для всего тела документа */
+  font-family: "Quicksand", sans-serif;
+  /* Используем flexbox для выравнивания и центрирования контента по вертикали */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Внутренний отступ для всего тела */
+  padding: 20px;
+  /* Фон для всего тела документа */
+  background-color: #f9f9f9;
+}
+
+.category {
+  /* Задаем ширину контейнера категории */
+  width: 80%;
+  /* Отступ снизу между категориями */
+  margin-bottom: 40px;
+  /* Нижняя граница контейнера категории */
+  border-bottom: 2px dotted #d4d4d4;
+}
+
+.category h2 {
+  /* Выровнять текст заголовка слева */
+  text-align: left;
+  /* Отступ снизу у заголовка */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  /* Размер шрифта заголовка */
+  font-size: 24px;
+}
+
+.products {
+  /* Flexbox для выравнивания и распределения продуктов */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Внутренний отступ снизу у контейнера продуктов */
+  padding-bottom: 25px;
+}
+
+.product {
+  /* Фон для каждого продукта */
+  background-color: #a0a0a0;
+  /* Граница у каждого продукта */
+  border: 1px solid #ddd;
+  /* Радиус границы для закругления углов */
+  border-radius: 8px;
+  /* Внутренний отступ у каждого продукта */
+  padding: 20px;
+  /* Внешний отступ у каждого продукта */
+  margin: 10px;
+  /* Ширина продукта, вычитая внутренний и внешний отступ */
+  width: calc(23% - 40px);
+  /* Тень для каждого продукта */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Flexbox для выравнивания и распределения содержимого внутри продукта */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#cosmetics .product {
+  /* Специфический фон для продуктов в категории "cosmetics" */
+  background-color: #fce4ec;
+  /* Граница у каждого продукта */
+  border: 1px solid #ddd;
+  /* Радиус границы для закругления углов */
+  border-radius: 8px;
+  /* Внутренний отступ у каждого продукта */
+  padding: 20px;
+  /* Внешний отступ у каждого продукта */
+  margin: 10px;
+  /* Ширина продукта, вычитая внутренний и внешний отступ */
+  width: calc(16% - 40px);
+  /* Тень для каждого продукта */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Flexbox для выравнивания и распределения содержимого внутри продукта */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.product img {
+  /* Максимальная ширина и высота изображения */
+  max-width: 80px;
+  max-height: 80px;
+  /* Отступ снизу у изображения */
+  margin-bottom: 10px;
+  /* Центрирование изображения */
+  align-self: center;
+}
+
+.product p {
+  /* Выровнять текст абзацев слева */
+  text-align: left;
+  /* Внутренний отступ сверху и снизу у абзацев */
+  margin: 5px 0;
+  /* Размер шрифта абзацев */
+  font-size: 18px;
+}
